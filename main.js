@@ -1,11 +1,7 @@
 function adduser() {
-    player1_email = document.getElementById("player1_name").value;
-    player2_email = document.getElementById("player2_name").value;
-    player1_password = document.getElementById("player1_password").value;
-    player2_password = document.getElementById("player2_password").value;
-    localStorage.setItem("Player 1 email is " , player1_email);
-    localStorage.setItem("Player 2 email is " , player2_email);
-    localStorage.setItem("Player 1 password is" , player1_password);
-    localStorage.setItem("Player 2 password is " , player2_password);
+    player1_name = document.getElementById("player1_name_input").value;
+    player2_name = document.getElementById("player2_name_input").value;
+    localStorage.setItem("Player 1 username is " , player1_name);
+    localStorage.setItem("Player 2 username is " , player2_name);
     window.location = "game.html";
 }
